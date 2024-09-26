@@ -1,0 +1,100 @@
+{ 
+    "_id" : ObjectId("59cdee88baacb17c449e1a58"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Filmas 'Septiņdesmitie. Spožums un posts' pirmizrāde", 
+    "description" : "27. septembrī plkst. 19:00 Latvijas 1. Rokkafejnīcā norisināsies filmas 'Septiņdesmitie. Spožums un posts' 2. daļas pirmizrāde.", 
+    "imgurl" : "https://lrma.lv/modules/core/client/img/content/21077577_1525226817515749_8565747529418432107_n.jpg", 
+    "base64img" : "", 
+    "location" : "Latvijas 1. Rokkajefnīca", 
+    "timestamp" : ISODate("2017-09-27T16:00:00.000+0000")
+}
+{ 
+    "_id" : ObjectId("59c62bc1baacb17c449e1a4a"), 
+    "timestamp" : ISODate("2017-10-06T17:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "KLANG! Breakdown", 
+    "description" : "6. oktobrī Latvijas Pirmajā Rokkafejnīcā, ar grupu Rebel Riot, The Factor un Relicseed līdzdalību norisināsies pasākums „KLANG Breakdown”.", 
+    "imgurl" : "https://lrma.lv/modules/core/client/img/content/20881923_655280058009897_8370216962921722066_n.jpg", 
+    "base64img" : "", 
+    "location" : "Latvijas 1. Rokkajefnīca"
+}
+{ 
+    "_id" : ObjectId("59cdef95baacb17c449e1a59"), 
+    "timestamp" : ISODate("2017-10-05T16:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Ekstrēmo Vokālu Meistarklase 2", 
+    "description" : "Alternatīvā Vokāla Studija jau otro reizi piedāvā apmeklēt ekstrēmo vokālu meistarklasi. Šoreiz tā būs veltīta advancētākas tehnikas apguvei, ko sauc par haršu jeb pitch skrīmu, kas būtībā nozīmē „skrīmošanu pa notīm”.  Šoreiz vokāla pasniedzējai Mārai Lisenko pievienosies arī pieredzējušais vokālists Leo Korenevsky no grupas SEVER.", 
+    "imgurl" : "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/21641124_887687154711972_8593851447360928711_o.jpg?oh=1ab4b273bea984880d189f10bd4de694&oe=5A441462", 
+    "base64img" : "", 
+    "location" : "soundschool.lv/Dynamic Records (Maskavas 68-302, Rīga)"
+}
+{ 
+    "_id" : ObjectId("59d0e5a66927cf7b92b522bb"), 
+    "timestamp" : ISODate("2017-10-06T19:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Grupa JĀNIS BUKUMS klubā Jelgavas Krekli", 
+    "description" : "6.oktobrī plkst. 22:00 klubā \"Jelgavas Krekli\" uzstāsies grupa \"Jānis Bukums\".", 
+    "imgurl" : "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-0/p526x296/22050274_1494819980607410_5129927804233224238_n.jpg?oh=d3154b5750d12f32bfc3a08024291f29&oe=5A4F01D3", 
+    "base64img" : "", 
+    "location" : "Jelgavas Krekli"
+}
+{ 
+    "_id" : ObjectId("59de9d646927cf7b92b522c7"), 
+    "timestamp" : ISODate("2018-11-09T18:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Rokopera 'Lāčplēsis'", 
+    "description" : "Latvijas Simtgades svinību priekšvakarā - 2018. gada 9. novembrī \"Arēna Rīga\" pirmo un vienīgo reizi Latvijas vēsturē notiks unikāla rokoperas \"Lāčplēsis\" izrāde - tās iestudējums ar simfonisko orķestri diriģenta Jāņa Liepiņa vadībā. Šis būs vēriena ziņā vēl nebijis rokoperas iestudējums, kurā īpaša loma būs arī apvienotajam Latvijas Nācijas kopkorim.", 
+    "imgurl" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-9/13939319_1712751152309365_8377853720858422755_n.jpg?oh=7acac1367309ab105f036df2f8e5a9d6&oe=5A3E0F87", 
+    "base64img" : "", 
+    "location" : "Arēna Rīga"
+}
+{ 
+    "_id" : ObjectId("59cdf132baacb17c449e1a5a"), 
+    "timestamp" : ISODate("2017-11-01T17:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Drum Day 2017", 
+    "description" : "Mūzikas instrumentu veikals „Sound Factory” sadarbībā ar firmu YAMAHA rīko konkursu jaunajiem bundziniekiem – DRUMDAY 2017. Konkursā var piedalīties ikviens vecumā līdz 30 gadiem. Plašāks info <a href=\"http://www.drumday.lv\" target=\"_blank\">www.drumday.lv</a>", 
+    "imgurl" : "https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/21752499_1593248257405758_4073779455242944378_o.jpg?oh=e6e4816f3fa700d194a126dd71e47fe3&oe=5A43C493", 
+    "base64img" : "", 
+    "location" : "Latvijas 1. Rokkafejnīca"
+}
+{ 
+    "_id" : ObjectId("59c62d46baacb17c449e1a4b"), 
+    "timestamp" : ISODate("2017-11-08T17:30:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "DIRKSCHNEIDER", 
+    "description" : "8.novembrī 'Palladium' koncertzālē būs unikālā iespēja baudīt visus lielākos 'Accept' hitus tās leģendārā vokālista Udo Dirkšneidera izpildījumā. Kopā ar grupu 'DIRKSCHNEIDER' Udo pēdējo reizi izpildīs Metal Heart, Princess Of The Dawn un, protams, Balls To The Wall.", 
+    "imgurl" : "https://lrma.lv/modules/core/client/img/content/DIRKSCHNEIDER.jpg", 
+    "base64img" : "", 
+    "location" : "Palladium"
+}
+{ 
+    "_id" : ObjectId("59de9c666927cf7b92b522c6"), 
+    "timestamp" : ISODate("2017-11-08T17:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Guitar Day 2017", 
+    "description" : "Mūzikas instrumentu veikals „Sound Factory” sadarbībā ar firmu YAMAHA rīko konkursu ģitāristiem – GUITARDAY 2017. Tas tiek rīkots, lai veicinātu Latvijas mūziķu profesionālo attīstību, mudinot ģitāristus radīt savus oriģināldarbus un ļaujot tos izrādīt plašākai publikai. Konkursā var piedalīties ikviens vecumā līdz 30 gadiem. Plašāks info www.guitarday.lv", 
+    "imgurl" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t31.0-8/22179678_1607069092690341_3187001335820066591_o.jpg?oh=7cfe8ba83229b55a25d3431b4a12f5cf&oe=5A3F60A1", 
+    "base64img" : "", 
+    "location" : "Latvijas 1. Rokkafejnīca"
+}
+{ 
+    "_id" : ObjectId("59c62e57baacb17c449e1a4c"), 
+    "timestamp" : ISODate("2017-11-26T17:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Kulakova Nakts", 
+    "description" : "2015.gadā veiksmīgi aizsāktā tradīcija – festivāls “Kulakova nakts”, kas pirmo reizi izskanēja Ogres estrādē, pagājušo gadu Liepājā, šogad norisināsies vienā no prestižākajām Latvijas koncertzālēm - Vidzemes koncertzālē „Cēsis”.", 
+    "imgurl" : "https://lrma.lv/modules/core/client/img/content/kulakovanakts.jpg", 
+    "base64img" : "", 
+    "location" : "Vidzemes koncertzāle 'Cēsis'"
+}
+{ 
+    "_id" : ObjectId("5a3121ea6927cf7b92b52304"), 
+    "timestamp" : ISODate("2018-01-19T18:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Refleksija", 
+    "description" : "“Refleksija” ir piecu vīru komanda no Ziemeļnieciskajām Rūjienas ārēm ar skaļu mūzikas un dzīves skatījumu, ko pauž pār žanru un stilu robežām. “Refleksija” ir rokgrupa no Rūjienas,kuras pirmsākumi meklējami dziesmas “Patriots” ierakstā, kas kā muzikāls eksperiments 2015.gada rudenī bija iemesls apvienoties vīriem no grupas “Smēde” ar vokālistu Arturu Gruzdiņu un bundzinieku Klāvu Skujiņu.", 
+    "imgurl" : "https://scontent-frt3-2.xx.fbcdn.net/v/t31.0-8/25188811_1762235990516733_8954447652568759409_o.jpg?oh=586dc292ec93e2be9e0d57bf95474eb5&oe=5AD20927", 
+    "base64img" : "", 
+    "location" : "Latvijas 1. Rokkafejnīca, Rīga"
+}

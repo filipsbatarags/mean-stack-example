@@ -1,0 +1,28 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.rockarticle._id ? 'Rediģēt "Latvijas Rokmūzikas Vēstures" Rakstu' : 'Pievienot "Latvijas Rokmūzikas Vēstures" Rakstu'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.rockarticleForm" class="form-horizontal" ng-submit="vm.save(vm.form.rockarticleForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="title">Virsraksts</label>
+          <input name="title" type="text" ng-model="vm.rockarticle.title" id="title" class="form-control" placeholder="Virsraksts" required>
+          <div ng-messages="vm.form.rockarticleForm.title.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Intervijas virsraksts ir obligāts.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="content">Saturs</label>
+          <textarea name="content" data-ng-model="vm.rockarticle.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.rockarticle._id ? 'Atjaunot' : 'Izveidot'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

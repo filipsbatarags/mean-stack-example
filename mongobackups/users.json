@@ -1,0 +1,34 @@
+{ 
+    "_id" : ObjectId("59803178629716285a1867cd"), 
+    "salt" : "***", 
+    "displayName" : "test test", 
+    "provider" : "local", 
+    "username" : "test", 
+    "created" : ISODate("2017-08-01T07:44:56.666+0000"), 
+    "roles" : [
+        "user"
+    ], 
+    "profileImageURL" : "modules/users/client/img/profile/default.png", 
+    "password" : "***", 
+    "email" : "", 
+    "lastName" : "test", 
+    "firstName" : "test", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "salt" : "***", 
+    "displayName" : "LRMA - Latvijas Rokmūzikas Asociācija", 
+    "provider" : "local", 
+    "username" : "lrma", 
+    "created" : ISODate("2017-08-08T12:29:12.049+0000"), 
+    "roles" : [
+        "user"
+    ], 
+    "profileImageURL" : "./modules/users/client/img/profile/uploads/c62d98b1d7c797ff3c0d530db1c74a58", 
+    "password" : "***", 
+    "email" : "info@lrma.lv", 
+    "lastName" : "Latvijas Rokmūzikas Asociācija", 
+    "firstName" : "LRMA -", 
+    "__v" : NumberInt(0)
+}

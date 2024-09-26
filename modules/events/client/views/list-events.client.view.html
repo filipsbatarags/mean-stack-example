@@ -1,0 +1,49 @@
+<section>
+  <div class="page-header">
+    <h1>PASĀKUMI</h1>
+  </div>
+  <!--div class="list-group">
+    <a ng-repeat="event in vm.events" ui-sref="events.view({ eventId: event._id })" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="event.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="event.user" ng-bind="event.user.displayName"></span>
+        <span ng-if="!event.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="event.title"></h4>
+      <p class="list-group-item-text" ng-bind-html="event.content"></p>
+    </a>
+  </div-->
+  <!--div class="alert alert-warning text-center" ng-if="vm.events.$resolved && !vm.events.length">
+    No events yet, why don't you <a ui-sref="events.create">create one</a>?
+  </div-->
+    
+    
+    
+    <div class="row"> 
+    <a ng-repeat="event in vm.events | orderBy:'timestamp'" ui-sref="events.view({ eventId: event._id })">
+        <div class="col-sm-4 col-md-4">
+    <div class="thumbnail">
+      <img src="{{event.imgurl}}" alt="{{event.title}}">
+        <small class="list-group-item-text">
+        Kad:
+        <span ng-bind="event.timestamp | date:'d.M.yyyy H:mm' "></span><br>
+            Kur:
+        <span ng-bind="event.location"></span><br> 
+      </small>
+      <div class="caption">
+        <h3 ng-bind="event.title"></h3>
+        <p ng-bind-html="event.description"></p>
+      </div>
+    </div>
+  </div>
+             
+    </a>
+    
+   </div>
+
+
+    
+    
+</section>

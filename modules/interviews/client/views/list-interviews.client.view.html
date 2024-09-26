@@ -1,0 +1,353 @@
+<section>
+  <!--div class="page-header">
+    <h1>Intervijas</h1>
+  </div-->
+  <!--div class="list-group">
+    <a ng-repeat="interview in vm.interviews" ui-sref="intervijas.view({ interviewId: interview._id })" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="interview.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="interview.user" ng-bind="interview.user.displayName"></span>
+        <span ng-if="!interview.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="interview.title"></h4>
+      <p class="list-group-item-text" ng-bind-html="interview.content"></p>
+    </a>
+  </div-->
+  <!--div class="alert alert-warning text-center" ng-if="vm.interviews.$resolved && !vm.interviews.length">
+    No interviews yet, why don't you <a ui-sref="intervijas.create">create one</a>?
+  </div-->
+    
+    
+    
+    
+    
+    
+    
+       <div class="row">
+   
+  <div class="col-sm-9">
+      
+       <!--div class="panel panel-default">
+  <div class="panel-body">
+    ad
+  </div>
+</div--> 
+      
+      <h3>INTERVIJAS</h3>
+      
+      <!--a href="#"
+socialshare
+socialshare-provider="facebook"
+socialshare-text="Atrasts Priekšnamā"
+socialshare-hashtags="lrma, latvijasrokmūzikasasociācija, atrastspriekšnamā"
+socialshare-url="https://www.lrma.lv/intervijas/atrastsprieksnama">
+Dalīties FB
+</a-->
+      
+      
+      
+       <div class="btn-group" role="group" aria-label="...">
+  <a href="#"
+         socialshare
+         socialshare-provider="twitter"
+         socialshare-url="https://www.lrma.lv/intervijas"
+         socialshare-text="LRMA - Intervijas"
+         socialshare-via="rockassociation"
+         socialshare-hashtags="lrma, latvijasrokmūzikasasociācija, intervijas"
+         class="btn btn-social-icon btn-twitter">
+          <span class="fa fa-twitter-square" style="color:#55acee;">Čivināt par šo..</span>
+      </a>
+           <a href="#"
+         socialshare
+         socialshare-provider="facebook"
+         socialshare-display="iframe"
+         socialshare-url="https://www.lrma.lv/intervijas"
+         socialshare-type="share"
+         socialshare-via="112034179491052"
+         socialshare-display="LRMA - Intervijas"
+         socialshare-quote="Latvijas Rokmūzikas Asociācijas interviju cikls ar Latvijas rokgrupām."
+         socialshare-hashtags="#latvijasrokmūzikasasociācija"
+         class="btn btn-social-icon btn-facebook">
+          <span class="fa fa-facebook-square" style="color:#3b5998;">Šērot FB..</span>
+      </a>
+            </div>   
+
+      
+        <div class="row">
+  <!--div class="col-sm-6 col-md-6"-->
+    <a ng-repeat="interview in vm.interviews" ui-sref="intervijas.view({ interviewId: interview._id })">
+        <div class="col-sm-6 col-md-6">
+    <div class="thumbnail" style="min-height:650px;height:650px;">
+            <h2 style="min-height:100px;height:100px;">{{interview.title | limitTo: 67}}{{interview.title.length > 67 ? '...': '' }}</h2>
+    <p style="min-height:30px;height:30px;">Autors: <b>{{interview.author | limitTo: 67}}{{interview.author.length > 67 ? '...':''}}</b></p>
+            <p ng-bind="interview.created | date:'d.MM.yyyy H:mm'"></p>
+        
+      <img src="{{interview.imgurl}}" alt="{{interview.title}}" style="max-height:300px;height:300px;">
+    
+            <p><span ng-bind="interview.photocaption"></span> | Foto: <span ng-bind="interview.photo"></span></p>
+  <!--small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.harticle.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.harticle.user" ng-bind="vm.harticle.user.displayName"></span>
+      <span ng-if="!vm.harticle.user">Deleted User</span>
+    </em>
+  </small-->
+  <div class="caption">
+        <p><b>{{interview.description | limitTo: 137}}{{interview.description.length > 137 ? '...': '' }}</b></p>
+      </div>
+        </div>
+        </div>
+    </a>
+    </div>
+    </div>    
+    
+  <!--/div-->
+           
+<!--div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Virsraksts</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper sem, nec finibus nibh. Praesent mollis erat sit amet leo vestibulum aliquam. Nunc sed blandit lorem, id egestas turpis.
+
+</p>
+        <p> <a href="#" class="btn btn-default" role="button">Tālāk...</a></p>
+      </div>
+    </div>
+  </div-->
+     
+
+
+
+      
+      
+      
+      
+    
+    
+  <div class="col-sm-3">
+        
+      <!--div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Kļūsti par LRMA biedru!</h3>
+  </div>
+  <div class="panel-body">
+    <a target="_blank" href="https://society.rention.com/lv/auth/register/vu0pCH7jT6">REĢISTRĒTIES</a>
+  </div>
+</div-->
+      
+      
+         <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">    <span class="fa fa-youtube-square"></span>
+MĒS PAR ROKU</h3>
+  </div>
+  <div class="panel-body">
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <div style="position:relative;height:0;padding-bottom:56.25%"><iframe width="560" height="315" ng-src="{{mprfullurl | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+</div>
+  </div>
+</div>
+      
+      
+       <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">    <span class="fa fa-youtube-square"></span>
+DIENAS DZIESMA</h3>
+  </div>
+  <div class="panel-body">
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <div style="position:relative;height:0;padding-bottom:56.25%"><iframe width="560" height="315" ng-src="{{fullurl | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+</div>
+  </div>
+</div>
+      
+     <!--div class="panel panel-default">
+  <div class="panel-body">
+    ad
+  </div>
+</div> 
+     
+      <div class="panel panel-default">
+  <div class="panel-body">
+    ad
+  </div>
+</div>
+      
+      <div class="panel panel-default">
+  <div class="panel-body">
+    ad
+  </div>
+</div-->
+      
+      
+      <h3><a ui-sref="events.list">PASĀKUMI</a></h3>
+  
+      <!--div class="panel panel-default">
+  <div class="panel-heading">6/10 - KLANG! Breakdown @ Latvijas 1. Rokkafejnīca</div>
+  <div class="panel-body">
+            <img class="img-responsive" src="/modules/core/client/img/content/20881923_655280058009897_8370216962921722066_n.jpg" alt="KLANG! Breakdown @ Latvijas 1. Rokkafejnīca">
+<p>6. oktobrī Latvijas Pirmajā Rokkafejnīcā, ar grupu Rebel Riot, The Factor un Relicseed līdzdalību  norisināsies pasākums „KLANG Breakdown”.</p>
+                </div>
+</div>
+      
+       <div class="panel panel-default">
+  <div class="panel-heading">08/11 - U.D.O Koncerts @ Palladium</div>
+  <div class="panel-body">
+      <img class="img-responsive" src="/modules/core/client/img/content/DIRKSCHNEIDER.jpg" alt="08/11 - U.D.O Koncerts @ Palladium">
+    <p>8.novembrī "Palladium" koncertzālē būs unikālā iespēja baudīt visus lielākos "Accept" hitus tās leģendārā vokālista Udo Dirkšneidera izpildījumā. Kopā ar grupu "Dirkschneider" Udo pēdējo reizi izpildīs Metal Heart, Princess Of The Dawn un, protams, Balls To The Wall. </p>      
+  </div>
+</div>
+      
+       <div class="panel panel-default">
+  <div class="panel-heading">26/11 - Kulakova Nakts @ Vidzemes koncertzāle Cēsis</div>
+  <div class="panel-body">
+      <img class="img-responsive" src="/modules/core/client/img/content/kulakovanakts.jpg" alt="08/11 - U.D.O Koncerts @ Palladium">
+    <p>2015.gadā veiksmīgi aizsāktā tradīcija – festivāls “Kulakova nakts”, kas pirmo reizi izskanēja Ogres estrādē, pagājušo gadu Liepājā, šogad norisināsies vienā no prestižākajām Latvijas koncertzālēm - Vidzemes koncertzālē „Cēsis”.</p>      
+  </div>
+</div-->
+      
+       <!--div class="row"--> 
+    <a ng-repeat="event in vm.events | orderBy:'timestamp'" ui-sref="events.view({ eventId: event._id })">
+        <!--div class="col-sm-4 col-md-4"-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 ng-bind="event.title"></h3></div>
+        <div class="panel-body">
+                  <img class="img-responsive" src="{{event.imgurl}}" alt="{{event.title}}">
+            <small class="list-group-item-text">
+        Kad:
+        <span ng-bind="event.timestamp | date:'d.M.yyyy H:mm' "></span><br>
+                Kur:
+        <span ng-bind="event.location"></span><br>        
+      </small>
+                    <p ng-bind-html="event.description"></p>        
+          </div>
+            </div>
+    </a>
+    
+   <!--/div-->
+      
+        <!--div class="row"> 
+    <a ng-repeat="pasakums in vm.pasakumi" ui-sref="pasakumi.view({ pasakumsId: pasakums._id })">
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{{pasakums.imgurl}}" alt="{{pasakums.title}}">
+        <small class="list-group-item-text">
+        Kad:
+        <span ng-bind="pasakums.timestamp | date:'mediumDate'"></span>
+      </small>
+      <div class="caption">
+        <h3 ng-bind="pasakums.title"></h3>
+        <p ng-bind-html="pasakums.description"></p>
+      </div>
+    </div>
+  </div>
+             
+    </a>
+    
+   </div-->
+      
+            <p>Sazinies ar mums:</p>
+            <p>rock@lrma.lv</p> 
+      
+      
+      
+      
+      
+      <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">MŪSU DRAUGI</h3>
+  </div>
+  <div class="panel-body">
+    
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://moonshineriga.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/moon-shine-logo.png" alt="Moon Shine Riga">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="https://www.facebook.com/thp.production/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/new-thp-logo.png" alt="THP Production">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://www.radioswh.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/swh_logo_gaiss_fons.png" alt="Radio SWH">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://attrademusic.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/at_logo.png" alt="A&T Trade">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://janisbukums.com/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/jb.png" alt="JĀNIS BUKUMS">
+    </a>
+  </div>
+      
+       <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="https://www.facebook.com/Alus-Krogs-Bralis-614420451920088/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/BralisKrogs.png" alt="Alus Krogs Brālis">
+    </a>
+  </div>
+      
+       <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://prof-designs.lv/en/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/prof-mini-logo.png" alt="Prof.Designs">
+    </a>
+  </div>
+      
+  </div>
+</div> 
+      
+      
+      
+      
+        </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--div class="row"> 
+    <a ng-repeat="interview in vm.interviews" ui-sref="intervijas.view({ interviewId: interview._id })">
+        <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{{interview.base64img}}" alt="{{interview.title}}">
+        <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="interview.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="interview.user" ng-bind="interview.user.displayName"></span>
+        <span ng-if="!interview.user">Deleted User</span>
+      </small>
+      <div class="caption">
+        <h3 ng-bind="interview.title"></h3>
+        <p ng-bind-html="interview.content"></p>
+      </div>
+    </div>
+  </div>       
+    </a>
+   </div-->
+
+    
+    
+</section>

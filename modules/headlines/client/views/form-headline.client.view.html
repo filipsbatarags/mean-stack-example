@@ -1,0 +1,257 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.headline._id ? 'Rediģēt Jaunumu' : 'Pievienot Jaunumu'}}</h1>
+  </div>
+    <div class="col-md-6">
+      <h1>Priekšskats</h1>
+        <div class="thumbnail" style="min-height:650px;height:650px;">
+            <h2 style="min-height:100px;height:100px;">{{vm.headline.title | limitTo: 67}}{{vm.headline.title.length > 67 ? '...': '' }}</h2>
+    <p style="min-height:30px;height:30px;">Autors: <b>{{vm.headline.author | limitTo: 67}}{{vm.headline.author.length > 67 ? '...':''}}</b></p>
+            <p ng-bind="vm.headline.created | date:'d.MM.yyyy H:mm'"></p>
+        
+      <!--img src="{{headline.imgurl}}" alt="{{headline.title}}" style="min-height:200px;height:200px;"-->
+              <img src="{{vm.headline.imgurl}}" alt="{{vm.headline.title}}" style="max-height:300px;height:300px;">
+
+            <p><span ng-bind="vm.headline.photocaption"></span> | Foto: <span ng-bind="vm.headline.photo"></span></p>
+  <!--small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.pinterview.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.pinterview.user" ng-bind="vm.pinterview.user.displayName"></span>
+      <span ng-if="!vm.pinterview.user">Deleted User</span>
+    </em>
+  </small-->
+  <div class="caption">
+        <p><b>{{vm.headline.description | limitTo: 137}}{{vm.headline.description.length > 137 ? '...': '' }}</b></p>
+      </div>
+        </div>
+    </div>
+  <div class="col-md-6">
+      
+      <!--testing multer>
+      <form id="myForm" name="myForm" enctype="multipart/form-data" method="post">
+        <input type="file" id="myFile" name="myFile">
+        <input id="myButton" type="submit" name="submit">
+      </form>
+      <testing multer-->      
+      
+      <!--div ng-show="uploading" class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only"></span>
+  </div>
+</div>
+      
+      <form>
+        <label class="btn btn-success">
+            Browse
+          </label>
+          <input type="file" file-model="file.upload" name="headlineimage" ng-disabled="uploading" style="display: none;" >
+          <button class="btn btn-primary" ng-disabled="uploading" type="submit">Upload</button>
+      </form>
+      
+      <img ng-src="{{ thumbnail.dataUrl || 'https://pawnhero.ph/fb/images/default-dp.jpg'}}" style="min-height:200px;height:200px;">
+      
+      <div ng-show="message">
+          <div ng-class="alert">{{message}}</div>
+      </div-->
+
+      
+      
+       <!-- Fine Uploader Thumbnails template w/ customization
+    ====================================================================== -->
+    <script type="text/template" id="qq-template-manual-trigger">
+        <div class="qq-uploader-selector qq-uploader" qq-drop-area-text="Drop files here">
+            <div class="qq-total-progress-bar-container-selector qq-total-progress-bar-container">
+                <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-total-progress-bar-selector qq-progress-bar qq-total-progress-bar"></div>
+            </div>
+            <div class="qq-upload-drop-area-selector qq-upload-drop-area" qq-hide-dropzone>
+                <span class="qq-upload-drop-area-text-selector"></span>
+            </div>
+            <div class="buttons">
+                <div class="qq-upload-button-selector qq-upload-button">
+                    <div>Select files</div>
+                </div>
+                <button type="button" id="trigger-upload" class="btn btn-primary">
+                    <i class="icon-upload icon-white"></i> Upload
+                </button>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+            <ul class="qq-upload-list-selector qq-upload-list" aria-live="polite" aria-relevant="additions removals">
+                <li>
+                    <div class="qq-progress-bar-container-selector">
+                        <div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="qq-progress-bar-selector qq-progress-bar"></div>
+                    </div>
+                    <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                    <img class="qq-thumbnail-selector" qq-max-size="100" qq-server-scale>
+                    <span class="qq-upload-file-selector qq-upload-file"></span>
+                    <span class="qq-edit-filename-icon-selector qq-edit-filename-icon" aria-label="Edit filename"></span>
+                    <input class="qq-edit-filename-selector qq-edit-filename" tabindex="0" type="text">
+                    <span class="qq-upload-size-selector qq-upload-size"></span>
+                    <button type="button" class="qq-btn qq-upload-cancel-selector qq-upload-cancel">Cancel</button>
+                    <button type="button" class="qq-btn qq-upload-retry-selector qq-upload-retry">Retry</button>
+                    <button type="button" class="qq-btn qq-upload-delete-selector qq-upload-delete">Delete</button>
+                    <span role="status" class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                </li>
+            </ul>
+
+            <dialog class="qq-alert-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Close</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-confirm-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">No</button>
+                    <button type="button" class="qq-ok-button-selector">Yes</button>
+                </div>
+            </dialog>
+
+            <dialog class="qq-prompt-dialog-selector">
+                <div class="qq-dialog-message-selector"></div>
+                <input type="text">
+                <div class="qq-dialog-buttons">
+                    <button type="button" class="qq-cancel-button-selector">Cancel</button>
+                    <button type="button" class="qq-ok-button-selector">Ok</button>
+                </div>
+            </dialog>
+        </div>
+    </script>
+
+    <style>
+        #trigger-upload {
+            color: white;
+            background-color: #00ABC7;
+            font-size: 14px;
+            padding: 7px 20px;
+            background-image: none;
+        }
+
+        #fine-uploader-manual-trigger .qq-upload-button {
+            margin-right: 15px;
+        }
+
+        #fine-uploader-manual-trigger .buttons {
+            width: 36%;
+        }
+
+        #fine-uploader-manual-trigger .qq-uploader .qq-total-progress-bar-container {
+            width: 60%;
+        }
+    </style>
+      
+    <div id="fine-uploader-manual-trigger"></div>
+
+    <!-- Your code to create an instance of Fine Uploader and bind to the DOM/template
+    ====================================================================== -->
+    <script>
+        $('#fine-uploader-manual-trigger').fineUploader({
+            template: 'qq-template-manual-trigger',
+            //debug: true,
+            request: {
+                endpoint: '/uploads'
+            },
+            deleteFile: {
+                enabled: true, // defaults to false
+                endpoint: '/uploads'
+            },
+            thumbnails: {
+                placeholders: {
+                    waitingPath: '/modules/headlines/client/img/placeholders/waiting-generic.png',
+                    notAvailablePath: '/modules/headlines/client/img/placeholders/not_available-generic.png'
+                }
+            },
+            callbacks: {
+                onComplete: function(id, name, responseJSON, maybeXhr) {
+                    $scope.test(responseJSON);
+                    //vm.headline.imgurl = 'https://lrma.lv/modules/core/client/img/content/' + responseJSON.uuid[0] + '/' + responseJSON.fileName[0];
+                    //{{imagefunct(responseJSON)}}
+                    //vm.responseJSON = responseJSON;
+                    //console.log({{vm.responseJSON}});
+                    //console.log(responseJSON);
+                    //console.log(id);
+                    //console.log(name);
+                }
+            },
+            autoUpload: false
+        });
+
+        $('#trigger-upload').click(function() {
+            $('#fine-uploader-manual-trigger').fineUploader('uploadStoredFiles');
+        });
+    </script>  
+      
+      
+    <form name="vm.form.headlineForm" class="form-horizontal" ng-submit="vm.save(vm.form.headlineForm.$valid)" novalidate>
+      <fieldset>
+            <!--input id="inp" type='file'-->          
+<!--p id="b64"></p-->
+<img ng-show="{{vm.headline.imgurl}}" id="imgurl" src="{{vm.headline.imgurl}}" alt="{{vm.headline.title}}" style="min-height:200px;height:200px;">
+        <div class="row">
+            <div class="col-md-6">
+          <div class="form-group">
+          <label class="control-label" for="photocaption">Photo Caption</label>
+          <input name="photocaption" type="text" ng-model="vm.headline.photocaption" id="photocaption" class="form-control" placeholder="Photo Caption" required>
+          <div ng-messages="vm.form.headlineForm.photocaption.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Photo caption is required.</p>
+          </div>
+        </div>
+                </div>
+                        <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label" for="photo">Photo Author</label>
+          <input name="photo" type="text" ng-model="vm.headline.photo" id="photo" class="form-control" placeholder="Photo Author" required>
+          <div ng-messages="vm.form.headlineForm.photo.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Photo author is required.</p>
+          </div>
+        </div>
+                                      </div>
+            </div>
+        <div class="form-group">
+            
+                        <p><b>NB!</b>Nokopē mani, lai taisnās 'pēdiņas' nesalauž facebook! -> “ ”</p>
+
+          <label class="control-label" for="title">Title</label>
+          <input name="title" type="text" ng-model="vm.headline.title" id="title" class="form-control" placeholder="Title" required>
+          <div ng-messages="vm.form.headlineForm.title.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article title is required.</p>
+          </div>
+        </div>
+          <div class="form-group">
+          <label class="control-label" for="author">Author</label>
+              <input name="author" type="text" ng-model="vm.headline.author" id="author" class="form-control" placeholder="Author" required>
+              <div ng-messages="vm.form.headlineForm.author.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article author is required.</p>
+          </div>
+          </div>
+          <div class="form-group">
+          <label class="control-label" for="description">First Paragraph</label>
+              <input name="description" type="text" ng-model="vm.headline.description" id="description" class="form-control" placeholder="First Paragraph" required>
+              <div ng-messages="vm.form.headlineForm.description.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article first paragraph is required.</p>
+          </div>
+          </div>
+        <div class="form-group">
+            
+            <p><b>NB!</b>Nokopē mani, lai taisnās 'pēdiņas' nesalauž facebook! -> “ ”</p>
+            
+          <label class="control-label" for="content">Content</label>
+          <!--textarea name="content" data-ng-model="vm.headline.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea-->
+        <div text-angular data-ng-model="vm.headline.content" id="content"></div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.headline._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

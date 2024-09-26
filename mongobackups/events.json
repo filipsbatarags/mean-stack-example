@@ -1,0 +1,30 @@
+{ 
+    "_id" : ObjectId("5a71e0ef6927cf7b92b5230f"), 
+    "timestamp" : ISODate("2018-02-09T18:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Opus Pro", 
+    "description" : "9. februārī Klubā 'Četri Balti Krekli' koncertēs pašmāju leģendārā smagā roka grupa 'Opus Pro'", 
+    "imgurl" : "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/27336395_1625645047484965_2245983416295905838_n.jpg?oh=99efcdcca6e87345bd926de81b1ed0d1&oe=5B16C625", 
+    "base64img" : "", 
+    "location" : "Četri Balti Krekli, Rīga"
+}
+{ 
+    "_id" : ObjectId("5a71e1306927cf7b92b52310"), 
+    "timestamp" : ISODate("2018-02-15T18:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Metālmūzikas viktorīna Metāla Galva", 
+    "description" : "Esi īsts smagās mūzikas pazinējs, kam krūtīs pukst metāla sirds? Nāc un pārbaudi savas zināšanas, smagi pavadi laiku kopā ar draugiem un pie viena uzzini ko jaunu metālmūzikas erudīcijas spēlē METĀLA GALVA! Izveido 4 cilvēku komandu un piesakies rakstot uz e-pasta adresi: metala.galva@gmail.com", 
+    "imgurl" : "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/27066776_565941577073339_2638862247017665164_n.jpg?oh=69fdcd4f2935908f2d08cee03d2b9deb&oe=5B1D614A", 
+    "base64img" : "", 
+    "location" : "Krogs 'Zobens un Lemess', Rīga"
+}
+{ 
+    "_id" : ObjectId("5a71e0b06927cf7b92b5230e"), 
+    "timestamp" : ISODate("2018-02-09T18:00:00.000+0000"), 
+    "user" : ObjectId("5989ae985d30cc4e6e103de2"), 
+    "title" : "Metālmūzikas gadabalvas pasniegšanas ceremonija", 
+    "description" : "Metālmūzikas gada balvas pasniegšanas ceremonija šogad Latvijā notiks jau devīto reizi. Tās iniciatori ir apvienības «Zobens un Lemess» un mūzikas kluba «Melnā piektdiena» pārstāvji, kas ar metal mūzikas pasākumu organizēšanu nodarbojas kopš 1996. gada. Latvijas Metālmūzikas gada balva ik gadu tiek pasniegta kategorijās 'Gada labākais albums', 'Koncertgrupa', 'Gada debija', 'Labākais vokālists', 'Mūziķis - instrumentālists'. Visās kategorijās uzvarētājus nosaka interneta balsojums un žūrija. Žūrijai ir tiesības piešķirt papildu balvas par ieguldījumu Latvijas metālmūzikas attīstībā, kā arī par citiem nopelniem.", 
+    "imgurl" : "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/26993979_1747882105275763_5907055933746755670_n.jpg?oh=ac4fb5c6cca94afb552809875ef3fd66&oe=5AE320F1", 
+    "base64img" : "", 
+    "location" : "Melnā Piektdiena, Rīga"
+}

@@ -1,0 +1,244 @@
+<div class="container" ng-controller="HeaderController as vm">
+  <div class="navbar-header">
+    <button class="navbar-toggle" type="button" ng-click="vm.isCollapsed = !vm.isCollapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+      <a ui-sref="lrmarock" class="navbar-brand"><img alt="LRMA" class="img-responsive text-center" src="/modules/core/client/img/brand/lrmax.png" /></a>
+  </div>
+  <nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
+      
+        <!--div class="btn-group" role="group" aria-label="...">
+  <a target="_blank" href="https://www.twitter.com/rockassociation" class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-twitter-square fa-2x" style="color:#55acee;"></span>
+  </a>
+  <a target="_blank" href="https://www.facebook.com/latvijasrokmuzikasasociacija/" class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-facebook-square fa-2x" style="color:#3b5998;"></span>
+  </a>
+    <a target="_blank" href="https://www.draugiem.lv/lrma/" class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-users fa-2x" style="color:#FB6103;"></span>
+  </a>
+    <a target="_blank" href="https://www.instagram.com/latvian_rock_music_association/" class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-instagram fa-2x" style="color:#e95950;"></span>
+  </a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCPiGoC-CUW_5ZE1x3ui5OSw" class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-youtube-square fa-2x" style="color:#bb0000;"></span>
+  </a>
+  
+        </div-->   
+          
+      <!--ul class="nav navbar-nav" ng-if="vm.menu.shouldRender(vm.authentication.user);">
+      <li ng-repeat="item in vm.menu.items | orderBy: 'position'" ng-if="item.shouldRender(vm.authentication.user);" ng-switch="item.type" ng-class="{ dropdown: item.type === 'dropdown' }" ui-sref-active="active" class="{{item.class}}" uib-dropdown="item.type === 'dropdown'">
+        <a ng-switch-when="dropdown" class="dropdown-toggle" uib-dropdown-toggle role="button">{{::item.title}}&nbsp;<span class="caret"></span></a>
+        <ul ng-switch-when="dropdown" class="dropdown-menu">
+          <li ng-repeat="subitem in item.items | orderBy: 'position'" ng-if="subitem.shouldRender(vm.authentication.user);">
+            <a ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
+          </li>
+        </ul>
+        <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
+      </li>
+    </ul-->
+      
+    <ul class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
+        
+          <li ui-sref-active="active">
+        <a ui-sref="lrmarock">Galvenā</a>
+      </li>
+        
+         <li ui-sref-active="active">
+        <a ui-sref="atrastsprieksnama.list">SWH PRIEKŠNAMS</a>
+      </li>
+        
+         <li ui-sref-active="active">
+        <a ui-sref="rockarticles.list">Roka Stāsti</a>
+      </li>
+        
+         <li ui-sref-active="active">
+        <a ui-sref="intervijas.list">Intervijas</a>
+      </li>
+        
+        <!--li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Intervijas<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a ui-sref="intervijas.list">Intervijas</a></li>
+            </ul>
+        </li-->
+        
+        <!--li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recenzijas<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a ui-sref="#">Albumi</a></li>
+            <li><a ui-sref="#">Koncerti</a></li>
+            <li><a ui-sref="#">Grāmatas</a></li>
+            <li><a ui-sref="#">Filmas</a></li-->
+            <!--li><a href="#">Lietas</a></li-->
+            <!--li role="separator" class="divider"></li-->
+            <!--li><a href="#">Separated link</a></li-->
+          <!--/ul-->
+        <!--/li-->
+        
+        
+        <!--li ui-sref-active="active">
+        <a ui-sref="strimi">Strīmi</a>
+      </li-->
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raksti<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a ui-sref="headlines.list">Jaunumi</a></li>
+            <li><a ui-sref="harticles.list">Latvijas rokmūzikas vēsture</a></li>
+            </ul>
+        </li>
+        
+          <li ui-sref-active="active">
+        <a ui-sref="reviews.list">Recenzijas</a>
+      </li>
+        
+        <!--li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerija<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a ui-sref="#">Video</a></li>
+            <li><a ui-sref="#">Foto</a></li>
+            </ul>
+        </li-->
+        
+        <!--li ui-sref-active="active">
+        <a ui-sref="foto">Jaunākie ieraksti</a>
+      </li>
+        <li ui-sref-active="active">
+        <a ui-sref="pierakstities">Pierakstīties jaunumiem</a>
+      </li-->
+        
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LRMA<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a ui-sref="lrmajaunumi">Jaunumi</a></li>
+            <li><a ui-sref="lrmaparmums">Par Mums</a></li>
+             <li><a ui-sref="lrmastatuti">Statūti</a></li>
+             <li><a ui-sref="lrmakontakti">Kontakti</a></li>
+              <li><a ui-sref="donate">Ziedot LRMA</a></li>
+            </ul>
+        </li>
+        
+        <!--li ui-sref-active="active">
+        <a ui-sref="lrmarock">LRMA ROCK</a>
+      </li>
+        
+        <li ui-sref-active="active">
+        <a ui-sref="jaunumi">Jaunumi</a>
+      </li>
+        <li ui-sref-active="active">
+        <a ui-sref="parmums">Par Mums</a>
+      </li>
+        <li ui-sref-active="active">
+        <a ui-sref="statuti">Statūti</a>
+      </li>
+        <li ui-sref-active="active">
+        <a ui-sref="kontakti">Kontakti</a>
+      </li-->
+        
+      <li ui-sref-active="active">
+        <a ui-sref="authentication.signin"><span ui-sref="authentication.signin" class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>
+      </li>
+        
+    </ul>
+    <ul class="nav navbar-nav navbar-right" ng-show="vm.authentication.user">
+      <li class="dropdown" uib-dropdown>
+        <a class="dropdown-toggle user-header-dropdown-toggle" uib-dropdown-toggle role="button">
+          <img ng-src="{{vm.authentication.user.profileImageURL}}" alt="{{vm.authentication.user.displayName}}" class="header-profile-image" />
+          <span ng-bind="vm.authentication.user.displayName"></span> <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li ui-sref-active="active" ng-repeat="item in vm.accountMenu.items">
+            <a ui-sref="{{item.state}}" ng-bind="item.title"></a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="/api/auth/signout" target="_self">Izrakstīties</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    
+    <!--nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
+      
+    <ul class="nav navbar-nav navbar-inverse navbar-right" ng-hide="vm.authentication.user">
+        
+        <li ui-sref-active="active">
+        <a ui-sref="lrmarock">Galvenā</a>
+      </li>
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Intervijas<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a href="#">Intervijas</a></li>
+            <li><a href="#">Atrasts "Priekšnamā"</a></li>
+            </ul>
+        </li>
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recenzijas<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a href="#">Albumi</a></li>
+            <li><a href="#">Koncerti</a></li>
+            <li><a href="#">Grāmatas</a></li>
+            <li><a href="#">Filmas</a></li>
+           
+            <li><a href="#">Lietas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        
+        
+        <li ui-sref-active="active">
+        <a ui-sref="strimi">Strīmi</a>
+      </li>
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Raksti<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a href="#">Jaunumi</a></li>
+            <li><a href="#">Latvijas rokmūzikas vēsture</a></li>
+            </ul>
+        </li>
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galerija<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Foto</a></li>
+            </ul>
+        </li>
+        
+        <li ui-sref-active="active">
+        <a ui-sref="foto">Jaunākie ieraksti</a>
+      </li>
+        <li ui-sref-active="active">
+        <a ui-sref="pierakstities">Pierakstīties jaunumiem</a>
+      </li>
+        
+        
+        <li class="dropdown" uib-dropdown>
+          <a uib-dropdown-toggle href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LRMA<span class="caret"></span></a>
+          <ul uib-dropdown-menu class="dropdown-menu">
+            <li><a href="jaunumi">Jaunumi</a></li>
+            <li><a href="parmums">Par Mums</a></li>
+             <li><a href="statuti">Statūti</a></li>
+             <li><a href="kontakti">Kontakti</a></li>
+            </ul>
+        </li>
+        
+        <li ui-sref-active="active">
+        <a ui-sref="veikals">Veikals</a>
+      </li>
+    
+        
+    </ul>
+
+  </nav-->
+</div>

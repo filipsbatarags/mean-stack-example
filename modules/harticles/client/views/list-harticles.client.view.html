@@ -1,0 +1,197 @@
+<section>
+
+       <div class="row">
+        
+  <div class="col-sm-9">
+      
+       <!--div class="panel panel-default">
+  <div class="panel-body">
+    ad
+  </div>
+</div--> 
+      
+      <h3>LATVIJAS ROKMŪZIKAS VĒSTURE</h3>
+      
+      
+      <div class="btn-group" role="group" aria-label="...">
+  <a href="#"
+         socialshare
+         socialshare-provider="twitter"
+         socialshare-url="https://www.lrma.lv/latvijasrokmuzikasvesture"
+         socialshare-text="LRMA - Latvijas Rokmūzikas Vēsture"
+         socialshare-via="rockassociation"
+         socialshare-hashtags="lrma, latvijasrokmūzikasasociācija, latvijasrokmūzikasvēsture"
+         class="btn btn-social-icon btn-twitter">
+          <span class="fa fa-twitter-square" style="color:#55acee;">Čivināt par šo..</span>
+      </a>
+           <a href="#"
+         socialshare
+         socialshare-provider="facebook"
+         socialshare-display="iframe"
+         socialshare-url="https://www.lrma.lv/latvijasrokmuzikasvesture"
+         socialshare-type="share"
+         socialshare-via="112034179491052"
+         socialshare-display="LRMA - Latvijas Rokmūzikas Vēsture"
+         socialshare-quote="Latvijas Rokmūzikas Vēsture."
+         socialshare-hashtags="#latvijasrokmūzikasasociācija"
+         class="btn btn-social-icon btn-facebook">
+          <span class="fa fa-facebook-square" style="color:#3b5998;">Šērot FB..</span>
+      </a>
+            </div>   
+
+      
+        <div class="row">
+  <!--div class="col-sm-6 col-md-6"-->
+    <a ng-repeat="harticle in vm.harticles" ui-sref="harticles.view({ harticleId: harticle._id })">
+        <div class="col-sm-6 col-md-6">
+    <div class="thumbnail" style="min-height:650px;height:650px;">
+            <h2 style="min-height:100px;height:100px;">{{harticle.title | limitTo: 67}}{{harticle.title.length > 67 ? '...': '' }}</h2>
+    <p style="min-height:30px;height:30px;">Autors: <b>{{harticle.author | limitTo: 67}}{{harticle.author.length > 67 ? '...':''}}</b></p>
+            <p ng-bind="harticle.created | date:'d.MM.yyyy H:mm'"></p>
+        
+      <img src="{{harticle.imgurl}}" alt="{{harticle.title}}" style="max-height:300px;height:300px;">
+    
+            <p><span ng-bind="harticle.photocaption"></span> | Foto: <span ng-bind="harticle.photo"></span></p>
+  <!--small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.harticle.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.harticle.user" ng-bind="vm.harticle.user.displayName"></span>
+      <span ng-if="!vm.harticle.user">Deleted User</span>
+    </em>
+  </small-->
+  <div class="caption">
+        <p><b>{{harticle.description | limitTo: 137}}{{harticle.description.length > 137 ? '...': '' }}</b></p>
+      </div>
+        </div>
+        </div>
+    </a>
+    </div>
+    </div>    
+    
+  
+  <div class="col-sm-3">
+        
+      <!--div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Kļūsti par LRMA biedru!</h3>
+  </div>
+  <div class="panel-body">
+    <a target="_blank" href="https://society.rention.com/lv/auth/register/vu0pCH7jT6">REĢISTRĒTIES</a>
+  </div>
+</div-->
+      
+      
+         <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">    <span class="fa fa-youtube-square"></span>
+MĒS PAR ROKU</h3>
+  </div>
+  <div class="panel-body">
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <div style="position:relative;height:0;padding-bottom:56.25%"><iframe width="560" height="315" ng-src="{{mprfullurl | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+</div>
+  </div>
+</div>
+      
+      
+       <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">    <span class="fa fa-youtube-square"></span>
+DIENAS DZIESMA</h3>
+  </div>
+  <div class="panel-body">
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <div style="position:relative;height:0;padding-bottom:56.25%"><iframe width="560" height="315" ng-src="{{fullurl | trustAsResourceUrl}}" frameborder="0" allowfullscreen></iframe></div>
+</div>
+  </div>
+</div>      
+      
+      <h3><a ui-sref="events.list">PASĀKUMI</a></h3>
+  
+    <a ng-repeat="event in vm.events | orderBy:'timestamp'" ui-sref="events.view({ eventId: event._id })">
+        <!--div class="col-sm-4 col-md-4"-->
+    <div class="panel panel-default">
+        <div class="panel-heading"><h3 ng-bind="event.title"></h3></div>
+        <div class="panel-body">
+                  <img class="img-responsive" src="{{event.imgurl}}" alt="{{event.title}}">
+            <small class="list-group-item-text">
+        Kad:
+        <span ng-bind="event.timestamp | date:'d.M.yyyy H:mm' "></span><br>
+                Kur:
+        <span ng-bind="event.location"></span><br>        
+      </small>
+                    <p ng-bind-html="event.description"></p>        
+          </div>
+            </div>
+    </a>
+      
+            <p>Sazinies ar mums:</p>
+            <p>rock@lrma.lv</p> 
+      
+      
+      
+      
+      
+      <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">MŪSU DRAUGI</h3>
+  </div>
+  <div class="panel-body">
+    
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://moonshineriga.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/moon-shine-logo.png" alt="Moon Shine Riga">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="https://www.facebook.com/thp.production/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/new-thp-logo.png" alt="THP Production">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://www.radioswh.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/swh_logo_gaiss_fons.png" alt="Radio SWH">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://attrademusic.lv/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/at_logo.png" alt="A&T Trade">
+    </a>
+  </div>
+      
+      <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://janisbukums.com/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/jb.png" alt="JĀNIS BUKUMS">
+    </a>
+  </div>
+      
+       <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="https://www.facebook.com/Alus-Krogs-Bralis-614420451920088/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/BralisKrogs.png" alt="Alus Krogs Brālis">
+    </a>
+  </div>
+      
+       <div class="col-xs-6 col-md-6">
+    <a target="_blank" href="http://prof-designs.lv/en/" class="thumbnail">
+      <img src="/modules/core/client/img/buddies/prof-mini-logo.png" alt="Prof.Designs">
+    </a>
+  </div>
+      
+  </div>
+</div> 
+      
+      
+      
+      
+        </div>
+</div>
+
+    
+</section>

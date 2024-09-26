@@ -1,0 +1,91 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.article._id ? 'Edit Article' : 'New Article'}}</h1>
+  </div>
+    <div class="col-md-6">
+      <h1>Priekšskats</h1>
+        <div class="thumbnail" style="min-height:650px;height:650px;">
+            <h2 style="min-height:100px;height:100px;">{{vm.article.title | limitTo: 67}}{{vm.article.title.length > 67 ? '...': '' }}</h2>
+    <p style="min-height:30px;height:30px;">Autors: <b>{{vm.article.author | limitTo: 67}}{{vm.article.author.length > 67 ? '...':''}}</b></p>
+            <p ng-bind="vm.article.created | date:'d.MM.yyyy H:mm'"></p>
+        
+      <!--img src="{{article.imgurl}}" alt="{{article.title}}" style="min-height:200px;height:200px;"-->
+              <img src="{{vm.article.base64img}}" alt="{{vm.article.title}}" style="max-height:300px;height:300px;">
+
+            <p><span ng-bind="vm.article.photocaption"></span> | Foto: <span ng-bind="vm.article.photo"></span></p>
+  <!--small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.pinterview.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.pinterview.user" ng-bind="vm.pinterview.user.displayName"></span>
+      <span ng-if="!vm.pinterview.user">Deleted User</span>
+    </em>
+  </small-->
+  <div class="caption">
+        <p><b>{{vm.article.description | limitTo: 137}}{{vm.article.description.length > 137 ? '...': '' }}</b></p>
+      </div>
+        </div>
+    </div>
+  <div class="col-md-6">
+    <form name="vm.form.articleForm" class="form-horizontal" ng-submit="vm.save(vm.form.articleForm.$valid)" novalidate>
+      <fieldset>
+            <input id="inp" type='file'>
+<!--p id="b64"></p-->
+<img id="base64img" src="{{vm.article.base64img}}" alt="{{vm.article.title}}" style="min-height:200px;height:200px;">
+        <div class="row">
+            <div class="col-md-6">
+          <div class="form-group">
+          <label class="control-label" for="photocaption">Photo Caption</label>
+          <input name="photocaption" type="text" ng-model="vm.article.photocaption" id="photocaption" class="form-control" placeholder="Photo Caption" required>
+          <div ng-messages="vm.form.articleForm.photocaption.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Photo caption is required.</p>
+          </div>
+        </div>
+                </div>
+                        <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label" for="photo">Photo Author</label>
+          <input name="photo" type="text" ng-model="vm.article.photo" id="photo" class="form-control" placeholder="Photo Author" required>
+          <div ng-messages="vm.form.articleForm.photo.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Photo author is required.</p>
+          </div>
+        </div>
+                                      </div>
+            </div>
+        <div class="form-group">
+          <label class="control-label" for="title">Title</label>
+          <input name="title" type="text" ng-model="vm.article.title" id="title" class="form-control" placeholder="Title" required>
+          <div ng-messages="vm.form.articleForm.title.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article title is required.</p>
+          </div>
+        </div>
+          <div class="form-group">
+          <label class="control-label" for="author">Author</label>
+              <input name="author" type="text" ng-model="vm.article.author" id="author" class="form-control" placeholder="Author" required>
+              <div ng-messages="vm.form.articleForm.author.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article author is required.</p>
+          </div>
+          </div>
+          <div class="form-group">
+          <label class="control-label" for="description">First Paragraph</label>
+              <input name="description" type="text" ng-model="vm.article.description" id="description" class="form-control" placeholder="First Paragraph" required>
+              <div ng-messages="vm.form.articleForm.description.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Article first paragraph is required.</p>
+          </div>
+          </div>
+        <div class="form-group">
+          <label class="control-label" for="content">Content</label>
+          <!--textarea name="content" data-ng-model="vm.article.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea-->
+        <div text-angular data-ng-model="vm.article.content" id="content"></div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.article._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
